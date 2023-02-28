@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cycle.css" />
+    <link rel="stylesheet" href="css/menaces.css" />
+    <link rel="stylesheet" href="css/reduire-consommation.css" />
+    <link rel="stylesheet" href="css/usage.css" />
+    <link rel="stylesheet" href="css/ressources.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="js/data_pred.js" defer></script>
+    <script type="text/javascript" src="js/main.js" defer></script>
+    <script type="text/javascript" src="js/eau-menaces.js" defer></script>
+    <script type="text/javascript" src="js/graphique.js" defer></script>
+
+
+    <title>Prenons du recul</title>
+</head>
+<body>
+
+<section class="section-Bulles">
+
+</section>
+
+<section class="section-BigTitle"> 
+    <h1>PRENONS DU RECUL</h1>
+    <h2>L'eau</h2>
+<div class="goutte-container">
+<div class="goutte"><img src="img/goutte-d-eau.png" alt=""></div>
+</div>
+</section>
+
+<section class="section-Motion">
+
+  <div id="anim">
+  </div>
+  <p class="name">Par DESAINTJAN Arthur</p>
+  <p class="source">Source : <a href="https://www.cieau.com/espace-enseignants-et-jeunes/les-enfants-et-si-on-en-apprenait-plus-sur-leau-du-robinet/cycle-de-leau/">CIEAU</a></p>
+</section>
+
+<section class="section-Cycle-eau">
+    <div class="section-Cycle-eau-click">
+        <h3>L'eau, son cycle et son origine</h3>
+        <div class="main-click">
+          <img src="/img/main.png" alt="main">
+          <div>
+            <p>Cliquez pour intéragir avec la carte</p>
+          <p class="name">By DESAINTJAN Arthur<br><span class="source">Source : <a href="https://www.cieau.com/connaitre-leau/leau-dans-la-nature/eau-douce-tout-savoir/">CIEAU</a> et <a href="https://www.inrae.fr/dossiers/lagriculture-va-t-elle-manquer-deau/leau-ressource-limitee-preserver">INRAE</a></span></p>
+          </div>
+          
+        </div>
+      </div>
+    
+      <div class="interactive-card-container">
+        <div class="interactive-card">
+          <p>Qu'est-ce que nous consommons ?</p>
+          <div class="white-border"></div>
+          <img src="/img/verre-d-eau1.png" alt="verre1">
+        </div>
+    
+    
+        <div class="interactive-card">
+          <img src="/img/robinet-verre1.png" alt="robinet-verre1">
+          <div class="white-border"></div>
+          <p><span>Nous savons tous</span> que notre planète est bleue. <span>Cependant</span> nous ne pouvons réellement consommer que de <span>l'eau douce à l'état liquide, </span>et seulement celle disponible. </p>
+        </div>
+    
+        <div class="interactive-card hoover">
+          <img src="/img/robinet-verre2.png" alt="robinet-verre2">
+          <div class="white-border"></div>
+          <div class="carte3-container">
+            <div class="left-content">
+              <div>Eau de</div>
+              <div>source</div>
+              <div>disponible :</div>  
+            </div>
+            <div class="right-content">
+              <div>66% lacs</div>
+              <div>22% eau dans le sol</div>
+              <div>6,5% eau atmosphérique</div>
+              <div>5,5% rivière</div> 
+            </div> 
+          </div>
+          
+          <div class="rectangle-eau rectangle-eau1"></div>
+          <div class="rectangle-eau rectangle-eau2"></div>
+          <div class="rectangle-eau rectangle-eau3"></div>
+          <div class="rectangle-eau rectangle-eau4"></div>
+        </div>
+    
+        
+        <div class="interactive-card">
+          <div class="carte4-container">
+            <div>Cependant<span> l'eau de source </span></div>
+            <div><span class="medium">disponible </span>ne</div>
+            <div>représente</div>
+            <div><span class="medium">que </span><span class="big">1%</span></div>
+            <div><span>de l'eau douce </span><span class="medium">totale</span></div>
+            <div>présente sur Terre</div>
+          </div>
+        </div>
+    
+        <div class="interactive-card hoover2">
+          <div class="carte5-container">
+            <p>Eau douce totale :</p>
+            <div class="white-border"></div>
+           <div class="carte5-content">
+            <div>77% glaciers</div>
+            <div>22% eau dans le sol</div>
+            <div>1% eau douce disponible</div>
+           </div>
+    
+           <div class="graphs">
+            <div class="graph1"></div>
+            <div class="graph2"></div>
+            <div class="graph3"></div>
+           </div>
+          </div>
+        
+        </div>
+    
+          
+        <div class="interactive-card">
+          <p>Alors même que :</p>
+          <div class="circle"></div>
+          <div class="carte6-container">
+            <div><span>l'eau douce</span> ne représente</div>
+            <div><span class="medium">que </span><span class="big">3%</span></div>
+            <div>de la quantité d'eau totale</div>
+            <div><span>sur Terre</span></div>
+          </div>
+        </div>
+    
+    
+        <div class="interactive-card">
+          <p>Sur Terre :</p>
+          <div class="circle"></div>
+          <div class="carte7-container">
+            <div><span class="big">3%</span></div>
+            <div class="medium-white">d'eau douce</div>
+          </div>
+          <div class="carte7-content">
+            <div><span class="medium">97%</span></div>
+            <div>d'eau salée</div>
+          </div>
+          <div class="background-circle"></div>
+        </div>
+    
+    
+        
+        <div class="interactive-card">
+          <div class="carte8-container">
+            <div>Donc l'être humainne peut</div>
+            <div> consommer que <span class="medium">0,003%</span></div>
+            <div>de <span class="medium-white">l'eau</span> présente sur la</div>
+            <div> <span class="medium-white">planète</span> Terre</div>
+          </div>
+          <div class="background-circle2"></div>
+        </div>
+      </div>
+    
+    
+</section>
+
+<section class="section-Title-usage">
+  <div class="wrapper-usage">
+    <h2>Les usages de l'eau</h2>
+    <h3>L’eau est prélevée pour de nombreux usages, avant d’être rejetée en partie dans la nature. Essentiel à notre vie quotidienne ainsi qu'à notre économie, l’accès à l’eau et son utilisation sont des sujets au cœur de nos sociétés. </h3>  
+  </div>
+
+</section>
+
+<section class="section-Usage-eau">
+  <h3>Quelle utilisation de l'eau faisons-nous en France ?</h3>
+  <div class="section-Usage-eau-content">
+    <h2>3</h2>
+    <h2>3</h2>
+    <h4>En France, l'eau a trois grands usages : </h4>
+    <p class="name">Au-dessus : par CELMA Annelise <br>Icones par BARDOT Emeline <br> <span class="source">Source : <a href="https://www.statistiques.developpement-durable.gouv.fr/leau-en-france-ressource-et-utilisation-synthese-des-connaissances-en-2021#:~:text=L%27agriculture%20est%20la%20premi%C3%A8re,les%20usages%20industriels%20(4%20%25).">developpement-durable.gouv</a></span></p>
+  </div>
+
+
+  <div class="container-icones">
+    <div class="icones">
+      <img src="/img/blé-plein.png" alt="blé" class="usage">
+      <div class="bouton"></div>
+      <p>L'Agriculture</p>
+    </div>
+    
+    <div class="icones">
+      <img src="/img/eau.png" alt="" class="usage">
+      <div class="bouton"></div>
+      <p>L'eau potable</p>
+    
+    </div>
+    
+    <div class="icones">
+      <img src="/img/usine.png" alt="" class="usage">
+      <div class="bouton"></div>
+      <p>Et l'industrie !</p>
+    </div>
+      </div>
+    </section>
+
+
+<section class="section-Agriculture">
+  <h3>L'Agriculture, un secteur à la consommation élevé </h3>
+  <div class="wrapper-cards">  
+    <div class="card-container">
+      <div class="left-block">
+        <img src="/img/graph1-conso1.png" alt="graphique">
+        <p class="name">BARDOT Emeline <br><span class="source">Source : <a href="https://www.statistiques.developpement-durable.gouv.fr/leau-en-france-ressource-et-utilisation-synthese-des-connaissances-en-2021">developpement-durable.gouv</a></span></p>
+      </div>
+      <div class="card">
+        <p>L'agriculture est la première activité consommatrice d'eau avec 45 % du total, devant le refroidissement des centrales électriques (31 %), l'eau potable (21 %) et les usages industriels (4 %).</p>      </div>
+    </div>
+    
+    <div class="card-container">
+      <div class="left-block">
+        <figure>
+          <img src="/img/graphique-conso-mais.png" alt="graphique"class="card-graphique2">
+          <figcaption class="name">CELMA Annelise</figcaption>
+          <figcaption class="source">Source : <a href="https://waterfootprint.org/media/downloads/WWF-France-2012-Empreinte-Eau_1.pdf">WWF</a></figcaption>
+        </figure>
+      </div>
+      <div class="card">
+        <p>Le maïs représente à lui seul <span>50 %</span> de l'empreinte eau bleue de production agricole nationale : en France, la moitié des eaux souterraines ou de surface à usage agricole est utilisée pour produire du maïs !</p>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="left-block">
+        <figure>
+          <img src="/img/ble-vs-mais.png" alt="graphique">
+          <figcaption class="name">BARDOT Emeline</figcaption>
+          <figcaption class="source">Source : <a href="https://www.agriculture-environnement.fr/2016/07/07/la-culture-du-mais-est-grande-consommatrice-deau-baliverne-10">Agriculture Environnement</a></figcaption>
+        </figure>
+        
+      </div>
+      <div class="card">
+        <div>
+          <p>Il s'agit aussi de la deuxième céréale cultivée en France après le blé.
+            En France, la culture du maïs est souvent stigmatisée par les écologistes, l'associant systématiquement à l'irrigation et donc à un usage massif d'eau.</p>
+            <p>Le maïs consomme beaucoup moins d'eau que d'autres cultures comme le blé. Il est souvent la céréale bouc émissaire, mais elle consomme moins d'eau et c'est la plante qui peut produire et nourrir le plus d'animaux à partir d'un mètre cube d'eau.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+</section>
+
+
+<section class="section-Cultures">
+  <div>
+  <h3>Les différentes cultures agricoles, plus ou moins consommatrices d'eau.</h3>
+  <h4>Voici par exemple, la quantité d'eau nécessaire à la création de divers produits :</h4>
+  </div>
+  <div>
+    <figure>
+    <img src="/img/graphique-cultures1.png" alt="graphique-cultures">
+    <figcaption class="name">BARDOT Emeline</figcaption>
+      <figcaption class="source">Source : <a href="https://planet-vie.ens.fr/thematiques/ecologie/l-eau-et-les-activites-agricoles">Planet Vie</a></figcaption>
+    </figure>
+    <figure>
+    <img src="/img/graphique-cultures2.png" alt="graphique-cultures">
+    <figcaption class="name">COUZINET Lou</figcaption>
+    <figcaption class="source">Source : <a href="https://www.cieau.com/le-metier-de-leau/ressource-en-eau-eau-potable-eaux-usees/connaissez-vous-les-usages-non-domestiques-de-leau/#:~:text=L%27eau%20dans%20l%27industrie,pour%20faire%20fonctionner%20les%20chaudi%C3%A8res.">CIEAU</a></figcaption>
+  </figure>
+  </div>
+  </section>
+  
+  
+  <section class="section-Usages-domestiques">
+    <div>
+      <h3>Et notre usage domestique dans tout ça ?</h3>
+      <h4>Des données publiées par le Centre d'information sur l'eau montrent que le premier poste de consommation est la douche et le bain (<span>39%</span>), devant les sanitaires (<span>20%</span>) ou le linge (<span>12%</span>). L'eau utilisée pour l'alimentation ne représente que <span>7%</span>, entre la cuisine (<span>6%</span>) et la boisson (<span>1%</span>).</h4>
+    </div>
+    <div>
+    <figure>
+      <img src="/img/graph-usage-domestique.png" alt="graph-usage">
+      <figcaption class="name">FALCH Maëlle</figcaption>
+      <figcaption class="source">Source : <a href="https://www.francetvinfo.fr/meteo/secheresse/infographies-agriculture-eau-potable-centrales-nucleaires-comprendre-comment-l-eau-est-consommee-en-france-en-quatre-graphiques_5302522.html">Franceinfo</a></figcaption>
+    </figure>
+    <figure>
+      <img src="/img/graph-collectivite.png" alt="graph-usage">
+      <figcaption class="name">BARDOT Emeline</figcaption>
+      <figcaption class="source">Source : <a href="https://www.cieau.com/le-metier-de-leau/ressource-en-eau-eau-potable-eaux-usees/quels-sont-les-usages-domestiques-de-leau/">CIEAU</a></figcaption>
+    </figure>
+  </div>
+  </section>
+  
+
+<section class="section-Title-ressources">
+  <div class="section-Title-ressources-content">
+    <h2>Nos ressources en eau</h2>
+    <h3>Notre Terre est recouverte à 72% d'eau, soit 509 millions de km2 par rapport à la surface de notre planète. Il est donc facile de croire que face à une telle quantité, nous avons un accès presque illimité à l'eau. La réalité est qu'une très faible quantité est potable.</h3>
+  </div>
+</section>
+
+
+<section class="section-Eau-sur-terre">
+
+  <h3>L'eau sur Terre</h3>
+  <h4>Ainsi, malgré la grande quantité d'eau présente sur Terre, nous pouvons voir que la majorité est de l'eau salée, inutilisable pour notre survie.</h4>
+  <div class="planet-container">
+    <img src="/img/terre.png" alt="planete">
+      <figure>
+    <img src="/img/graph2-lilineV2@3x.png"alt="graph-eau">
+    <figcaption class="name">BARDOT Emeline</figcaption>
+    <figcaption class="source">Source : <a href="https://www.cieau.com/connaitre-leau/les-ressources-en-france-et-dans-le-monde/ou-en-sont-les-ressources-en-eau-dans-le-monde/">CIEAU</a></figcaption>
+  </figure>
+  </div>
+
+
+
+
+  
+</section>
+
+<section class="section-Eau-douce">
+  <figure>
+    <img src="/img/graph2-lilineV2-camembert3x.png"alt="graph-eau-sans-legende" data-aos="fade-right"
+    data-aos-offset="1000"
+    data-aos-easing="ease-in-sine">
+  </figure>
+  <div>
+    <div class="section-Eau-douce-content">
+      <h4>1,8% d'eau douce sous forme de glace<br> <span class="name">BARDOT Emeline</span></h4>
+      <img src="/img/Iceberg.svg" alt="goutte-d-eau"></div>
+
+    <div class="section-Eau-douce-content">
+      <h4>0,7% d'eau douce sous forme liquide <br> <span class="name">COUZINET Lou</span></h4>
+      <img src="/img/goutte-d-eau.png" alt="goutte-d-eau">
+    </div>
+  </div>
+</section>
+
+
+ <section class="section-Eau-liquide">
+  <h3>La source de notre eau liquide douce :</h3>
+  <div class="section-Eau-liquide-container">
+      <img src="img/illu-liline3x.png" alt="graph-evapo">
+      <div class="section-Eau-liquide-content"><p class="span">Moins de la moitié de l’eau de pluie est une ressource d’eau renouvelable. Cependant, ce volume <span>diminue</span> avec <span>14%</span> en moins de pluviométrie par an.</p>
+      <p class="name">A gauche : par BARDOT Emeline<br><span class="source">Source : <a href="https://www.notre-environnement.gouv.fr/actualites/breves/article/pourquoi-la-ressource-en-eau-renouvelable-a-t-elle-diminue-depuis-1990">notre-environnement.gouv</a></span></p>
+        <p class="name">A droite : par COUZINET Lou<br><span class="source">Source : <a href="https://www.cieau.com/connaitre-leau/les-ressources-en-france-et-dans-le-monde/ou-en-sont-les-ressources-en-eau-dans-le-monde/">CIEAU</a></span></p>
+      </div>
+  
+      <div class="bulles absolute1">
+        <img src="/img/Bubble.png" alt="bulle-1">
+        <div>rivières</div>
+      </div>
+
+      <div class="bulles absolute2">
+        <img src="/img/Bubble.png" alt="bulle-2">
+        <div>lacs</div>
+      </div>
+
+      <div class="bulles absolute3">
+        <img src="/img/Bubble.png" alt="bulle-3">
+        <div>torrents</div>
+      </div>
+  
+      <div class="bulles absolute4">
+        <img src="/img/Bubble2.svg" alt="bulle-4">
+        <div class="text-wrap"><span>38%</span> des eaux superficielles</div>
+      </div>
+      
+      <div class="bulles absolute5">
+        <img src="/img/Bubble2.svg" alt="bulle-5">
+        <div class="text-wrap"><span>62%</span> provient des nappes phréatiques</div>
+      </div> 
+
+      <img src="/img/bulle-simple.png"alt="bulles-medium1">
+      <img src="/img/bulle-simple.png"alt="bulles-medium2">
+
+      <img src="/img/bulle-simple.png"alt="small-bulles1">
+      <img src="/img/bulle-simple.png"alt="small-bulles2">
+
+      <img src="/img/bulle-simple.png"alt="micro-bulles1">
+      <img src="/img/bulle-simple.png"alt="micro-bulles2">
+  </div>
+
+</section> 
+
+<section class="section-quantite-eau">
+  <h3>La quantité d'eau nous étant disponible par personne et par année :</h3>
+  <h4>Notre ressource en eau dans les années 1950 était double à celle disponible aujourd'hui. Cette baisse s'explique par la forte croissance démographique, l'industrialisation, l'urbanisation et l'intensification agricole.</h4>
+  <div class="section-quantite-eau-container">
+    <figure>    
+      <img src="/img/graph1-liline@3x.png"alt="quantite-eau">
+      <figcaption class="name">BARDOT Emeline</figcaption>
+      <figcaption class="source">Source : <a href="https://www.cieau.com/connaitre-leau/les-ressources-en-france-et-dans-le-monde/ou-en-sont-les-ressources-en-eau-dans-le-monde/">CIEAU</a></figcaption>
+    </figure>
+
+  </div>
+
+</section>
+
+<section class="section-insuffisance-eau">
+   <h3 class="section-insuffisance-eau-title">Un accès insuffisant à l'eau potable</h3> 
+  <div class="wrapper-cards">    
+    <div class="card-container">
+      <div class="left-block">
+        <p class="text-card">Actuellement, il y a de plus en plus de personnes qui vivent dans un pays avec une difficulté d’accès à l’eau potable en 2018. Ce chiffre ne cesse d’augmenter et si nous ne changeons pas d’habitudes, le stress hydrique ne cessera d’augmenter.  </p>
+      </div>
+      <div class="card">
+          <h2>3</h2>
+          <div class="card-content">
+            <img src="/img/3personnes.png"alt="personnes">
+            <h3 class="light-blue">MILLIARDS</h3>
+          </div>
+          <h3 class="date">d'ici 2018</h3>
+
+        </div>
+    </div> 
+
+    <div class="card-container">
+      <div class="left-block">
+        <p class="text-card">Ainsi à ce rythme, nous risquons de passer à 5 milliards de personnes qui auront des difficultés à accéder à l’eau potable. Soit près de la moitié de l’humanité prévue ! <br>
+        <span class="name">BARDOT EMELINE</span><br>
+        <span class="source">Source : <a href="https://www.futura-sciences.com/planete/actualites/eau-manque-eau-touchera-5-milliards-etres-humains-ici-2050-avertit-omm-77142/">Futura Sciences</a></span></p>
+      </div>
+      <div class="card">
+          <h2  class="light-blue">5</h2>
+          <div class="card-content">
+            <img src="/img/5personnes.png"alt="personnes">
+            <h3 class="light-blue">MILLIARDS</h3>
+          </div>
+          <h3 class="date">d'ici 2050</h3>
+
+        </div>
+    </div> 
+</section>
+
+
+
+<section class="section-menaces">
+  <div class="container" id="container">
+    <article class="fullpage art1 section titre" id="champdis2">
+      <h2>Quelles sont les menaces qui pèsent sur notre ressource en eau ?</h2>
+      <h3>Les ressources en eau sont de nos jours de plus en plus menacées. <br>
+        On pourrait penser que l’eau est la plus consommée par les usages domestiques mais il s’avère que c’en est tout autre.</h3>
+    </article>
+    <article class="fullpage art2 section" id="champvue">
+      <h3 class="hidden" id="rondh2">La consommation de l’eau par secteur d’activité dans le monde</h3>
+      <div>
+        <figure class="hidden" id="rondfig">
+          <img src="/img/graph1-arya.png" alt="img1">
+          <figcaption class="name">BARDOT Emeline</figcaption>
+          <figcaption class="source">Source : Planetoscope</figcaption>
+        </figure>
+        <div class="divborddroit glass">
+          <p>Que ce soit pour des demandes directes comme l'accès à l'eau potable ou aux toilettes, ou pour des
+            demandes indirectes comme les besoins en eau pour les produits agricoles, <span>l'agriculture</span> est le
+            secteur le plus consommateur de ressources en eau : <span>70%</span> pour ce secteur, contre seulement <span>22%</span>
+            pour l'industrie et <span>8%</span> pour les utilisations domestiques.
+          </p>
+        </div>
+      </div>
+      <img src="/img/terrain-ble.png" alt="champ_de_blé" class="prechamp" id="imgchamp">
+    </article>
+    <article class="fullpage art3 section" id="rondvue">
+      <p>Sans changement dans le domaine de l'agriculture, les <span>besoins en eau</span> pour ce secteur devraient augmenter
+        <span class="grand">jusqu'à 90%</span> d'ici 2050 !</p>
+      <div class="wrap">
+        <img src="/img/arrow.png" alt="arrow" class="fleche">
+        <figure>
+          <img src="/img/graph2-arya.png" alt="img2">
+          <figcaption class="name">BARDOT Emeline</figcaption>
+        </figure>
+      </div>
+    </article>
+    <article class="fullpage art4 section" id="ronddis">
+      <div class="divbordgauche glass">
+        <p><span class="grand">Jusqu'à 60%</span> de l'eau peut être gaspillée lors de <span>l'irrigation</span>, du fait de l'évaportation
+          ou de l'infiltration dans le sol, sans alimenter les cultures, surtout dans les espaces agricoles chauds et secs.
+        </p>
+        <p class="source">Source : <a href="https://www.cnrs.fr/cw/dossiers/doseau/decouv/degradation/18_irrigation.htm">CNRS</a></p>
+      </div>
+      <img src="/img/arrosoir1.png" alt="arrosoirgoutte" class="arrosoir">
+    </article>
+    <article class="fullpage art5 section" id="champvue2">
+      <div class="divbordgauche glass">
+        <p>La <span>pollution des eaux de surface et souterraine</span> a un fort impact sur la production d'eau destinée à la
+          consommation humaine. Ainsi, <span>en France</span> en 2019, <span>66,9%</span> des masses d'eau superficielle et
+          <span>70,7%</span> des masses d'eau souterraine présentaient un <span>bon état chimique</span> (contre 51,2% et 58,9% en
+          2010).
+          Plus les eaux seront polluées, moins il y aura d'eau douce disponible sur Terre.
+        </p>
+        <p class="source">Source : <a href="https://www.statistiques.developpement-durable.gouv.fr/la-pollution-des-eaux-superficielles-et-souterraines-en-france-synthese-des-connaissances-en-2022?rubrique=44&dossier=215">Developpement-durable.gouv</a></p>
+      </div>
+      <img src="/img/arrosoir2.png" alt="arrosoirgoutte" class="arrosoir">
+    </article>
+    <article class="fullpage art6 section" id="champdis">
+      <div class="wrap">
+        <figure> 
+          <figcaption>Taux de stations dont l’IPTC-pesticides dépasse 1 sur la période 2018-2020</figcaption>
+          <img src="/img/graph3-arya.png" alt="france">
+          <figcaption class="name">NOM Prénom</figcaption>
+        </figure>
+        <p class="wrapp">L'<span>indice des pressions toxiques cumulées</span> (IPTC) mesure l’intensité des pressions
+          toxiques qu’un <span>mélange de pesticides exerce sur les organismes aquatiques</span>. Le cumul des pressions
+          toxiques exercées par les pesticides est considéré comme <span>élevé lorsque l’IPTC dépasse 1</span>, car la
+          survenue d’<span>effets néfastes sur l’environnement</span> est soit <span>hautement probable</span>, soit possible mais à
+          confirmer par une expertise complète.
+          Sur la période 2018-2020, près d’<span>une station sur deux</span> présente un <span>IPTC supérieur à 1</span> à l’échelle
+          de la métropole, les situations les plus dégradées étant observées sur la moitié nord.
+          <br><br>
+          <span class="source">Source : Eaufrance ; Ineris. Traitements : SDES, 2022. ainsi que <a href="https://www.statistiques.developpement-durable.gouv.fr/la-pollution-des-eaux-superficielles-et-souterraines-en-france-synthese-des-connaissances-en-2022?rubrique=44&dossier=215">Developpement-durable.gouv</a></span>
+        </p>
+      </div>
+    </article>
+    <article class="fullpage art7 section">
+      <div class="wrap2">
+        <div id="chart-container-global" style="position: relative; height: 40vh; width: 40vw">
+          <canvas id="chart1"></canvas>
+          <p class="name">FALCH Maëlle (réalisé en JS)</p>
+        </div>
+        <p class="wrapp">L'assec est l'<span>assèchement temporaire d'un cours d'eau</span>. Sur ces 10 dernières années, on
+          peut remarquer une <span>hausse vive</span> du nombres d'assecs en France. Cela est dû à la <span>baisse des
+            précipitations</span> mais aussi au fait que les eaux souterraines sont aujourd'hui drainées deux à quatre fois
+          plus vite qu'elles ne se remplissent (Time, 2018). 21 des 37 plus grands aquifères du monde s'épuisent plus
+          rapidement qu'ils ne peuvent se remplir, c'est une menace à long terme pour l'approvisionnement en eau douce
+          dans le monde (NASA, 2015).
+          <br><br>
+          <span class="source">Source : <a href="https://onde.eaufrance.fr/">Onde</a></span>
+        </p>
+      </div>
+    </article>
+    <article class="fullpage art8 section">
+      <div class="wrap3">
+        <p>La <span>demande en eau n'a cessé d'augmenter</span> ces 50 dernières années, particulièrement en Europe. La cause
+          première est la <span>croissance démographique</span>. Un plus grand nombre de personne augmente naturellement le
+          besoin en eau. Cependant, on a pu constater une <span>diminution globale de 24% des ressources en eau
+            renouvelables</span> par habitant. Comme nous avons pu le voir, il y a de moins en moins de ressources en eaux
+          souterraines, et deux tiers des masses d'eau superficielle et souterraine présentent un bon état chimique.
+          <br><span>La qualité de l'eau ainsi que sa quantité baisse, alors que la demande ne fait qu'augmenter...</span></p>
+        <p class="source left">Source : <a href="https://www.cieau.com/connaitre-leau/les-ressources-en-france-et-dans-le-monde/impacts-des-activites-humaines-sur-les-ressources/">Cieau</a></p>
+      </div>
+    </article>
+    <article class="fullpage art9 section">
+    </article>
+  </div>
+
+</section>
+<section class="eau-soluce">
+  <article class="fullpage titre">
+    <h2>Mais comment réduire notre consommation d’eau ?</h2>
+    <h3>Il est important d’avoir conscience des cartes que l’on a sa disposition, et de l’impact individuel que nous
+      pouvons avoir. Si vous en avez les moyens, voici quelques façons pour vous d’avoir un impact sur la consommation
+      d’eau.</h3>
+      <p class="name">COUZINET Lou <br>
+        <span class="source">Source : <a href="https://selectra.info/energie/eau/consommation/reduire#pourquoi-reduire">Selectra</a></span></p>
+  </article>
+  <section class="container" id="container2">
+    <article class="bubulle fullpage section" id="nocardl">
+      <figure>
+        <img src="/img/Bubble_1.svg" alt="bubulle">
+        <figcaption>Se procurer une douchette économe</figcaption>
+        <figcaption class="hidden">Elle réduit une consommation classique moyenne de <span>20 litres</span> par minute à
+          <span>8 à 10 litres</span> !</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/Bubble_3.svg" alt="bubulle">
+        <figcaption>Acheter un minuteur pour mettre dans la salle de bain</figcaption>
+        <figcaption class="hidden">Un outil pratique et simple permettant de se rappeler de limiter ses douches à
+          environs <span>5 minutes</span>.</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/Bubble_4.svg" alt="bubulle">
+        <figcaption>Acquérir un mitigeur thermostatique</figcaption>
+        <figcaption class="hidden">Le mitigeur thermostatique permet d'obtenir de l'eau chaude presque instantanément, ce qui évite de devoir gaspiller l’eau en attendant qu’elle chauffe, ce qui revient souvent à plus de <span>2
+            litres</span> gaspillés.</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/Bubble_1.svg" alt="bubulle">
+        <figcaption>Investir dans une citerne d'eau de pluie</figcaption>
+        <figcaption class="hidden">L’installation d’une citerne à destination d’un usage individuel coûte entre <span>30
+            et 50€</span> et permet d’économiser une quantité conséquente d’eau non potable dans un foyer.</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/Bubble_2.svg" alt="bubulle">
+        <figcaption>S'équiper d'une chasse d'eau à double débit</figcaption>
+        <figcaption class="hidden">Permettant de choisir la quantité d’eau la plus adapté à votre besoin, ce dispositif
+          permet de réduire sa consommation d’eau de <span>50%</span> !</figcaption>
+      </figure>
+      <figure>
+        <img src="/img/Bubble_4.svg" alt="bubulle">
+        <figcaption>Placer un mousseur ou aérateur sur le robinet</figcaption>
+        <figcaption class="hidden">Ces petits dispositifs à placer à l’extrémité des robinets permettent de réduire le débit du robinet à <span>6 à 8 litres par minutes</span>.</figcaption>
+      </figure>
+    </article>
+    <article class="carte fullpage section" id="cardl1">
+      <div class="txtcard">
+        <h3>Pour aller plus loin : l’eau virtuelle</h3>
+        <h4>Ou comment nos choix influent sur le monde d’aujourd’hui et de demain.</h4>
+        <p>Si il est évident que prendre une douche ou faire sa vaisselle consomme de l’eau, on oublie trop souvent
+          que l’eau est utilisé partout et tout le temps. </p>
+        <p>Il ne s’agit donc évidemment pas d’arrêter de consommer, mais bien d’avoir conscience que derrière chacun
+          de nos choix se trouvent les conséquences. Entre envie et impact, comment faire le choix ?</p>
+      </div>
+      <div class="cardl glass cache" id="cgl1">
+        <div>
+          <figure>
+            <img src="/img/Beer.svg" alt="pinte">
+            <figcaption>Une pinte de bière</figcaption>
+            <figcaption class="chiffre">74 litres</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="/img/Wine.svg" alt="vin">
+            <figcaption>Un verre de vin</figcaption>
+            <figcaption class="chiffre">129 litres</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="/img/Banana.svg" alt="banane">
+            <figcaption>Une banane</figcaption>
+            <figcaption class="chiffre">160 litres</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+    <article class="carte fullpage section" id="cardl2">
+      <div>
+        <h3>Limiter notre
+          consommation de viande</h3>
+        <h4>Ou comment manger un bout de viande revient à prendre une dizaine de bain.</h4>
+        <p>L’industrie agro-alimentaire est la plus grande consommatrice d’eau, et par conséquent, la consommation de
+          ses produits à un impact à l’image de son industrie</p>
+        <p>De la culture de la nourriture pour le bétail à la quantité d’eau consommé par ces derniers, la quantité
+          d’eau nécessaire pour pouvoir se faire un barbecue est phénoménale.</p>
+      </div>
+      <div class="cardl glass" id="cgl2">
+        <div>
+          <figure>
+            <img src="/img/Cow.svg" alt="vache">
+            <figcaption>Une vache consomme entre</figcaption>
+            <figcaption class="chiffre">50 et 100 litres/jour</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="/img/Steak.svg" alt="steak">
+            <figcaption>Un steak</figcaption>
+            <figcaption class="chiffre">1500 litres</figcaption>
+          </figure>
+        </div>
+    </article>
+    <article class="carte fullpage section" id="cardl3">
+      <div>
+        <h3>L’impact de la Fast-Fashion</h3>
+        <h4>Limiter notre garde-robe, plus qu’un choix esthétique.</h4>
+        <p>Il est important de s’habiller; L’idée n’est pas de prôner le nudisme, simplement de mettre en lumière
+          l’impact derrière chaque pièce vestimentaire. Le prix à payer étant fort, bien choisir ses vêtements pour
+          s’assurer de leurs qualités et de leurs longévités, en plus de leur esthétisme, est bien plus qu’une
+          nécessité.</p>
+        <p>La création du textile nécessite d’abord d’obtenir le matériel nécessaire, et chacun nécessite des
+          quantités différentes d’eau. Il faut par exemple, pour obtenir 1 kilo de rayonne, en moyenne <span>5 700
+            litres</span> d’eau.</p>
+      </div>
+      <div class="cardl glass" id="cgl3">
+        <div>
+          <figure>
+            <img src="/img/Tshirt.svg" alt="tshirt">
+            <figcaption>Un t-shirt</figcaption>
+            <figcaption class="chiffre">2495 litres</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="/img/Pantalon.svg" alt="vin">
+            <figcaption>Un pantalon</figcaption>
+            <figcaption class="chiffre">8000 litres</figcaption>
+          </figure>
+        </div>
+    </article>
+  </section>
+
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="lottie.js"></script>
+<script>
+  var animation = bodymovin.loadAnimation({
+    container: document.getElementById('anim'),
+    rederer: 'svg',
+    autoplay: true,
+    path:'data.json'
+  })
+</script>
+</body>
+</html>

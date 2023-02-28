@@ -1,0 +1,319 @@
+/* section Title ressources */
+.section-Title-ressources-content{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:60%;
+}
+
+/* FIN section Title ressources */
+
+/*  section eau sur terre */
+
+.section-Eau-sur-terre{
+	display:flex;
+	flex-direction: column;
+}
+
+.planet-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+	position:relative;
+}
+
+.planet-container figcaption{
+    margin-bottom:0;
+}
+
+img[alt="planete"]{
+	width:150px;
+	animation:rotating 50s linear infinite;
+	-webkit-animation:rotating 50s linear infinite;
+	margin:auto;
+}
+
+
+img[alt="graph-eau"]{
+	width:100%;
+
+}
+
+.section-Eau-sur-terre figure{
+	width: fit-content;
+	width:40%;
+	position: absolute;
+
+}
+
+
+
+/* FIN section eau sur terre */
+
+
+/* section-Eau-douce */
+
+.section-Eau-douce div {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.section-Eau-douce-content{
+	display: flex !important;
+	flex-direction: row !important;
+	gap:3rem;
+	margin-bottom: 50px;
+	width: 70%;
+}
+
+.section-Eau-douce figure{
+	width: fit-content;
+	width:50%;
+    position: absolute;
+    left:-30%;
+
+}
+
+
+img[alt="graph-eau-sans-legende"]{
+    width:100%;
+}
+.section-Eau-douce-content h4{
+	text-align: center;
+}
+.section-Eau-douce div div:nth-child(1) img[alt="goutte-d-eau"] {
+	width:25% !important;
+}
+img[alt="goutte-d-eau"]{
+	width:12%;
+	margin: auto;
+}
+
+/* FIN section-Eau-douce */
+
+
+/* section-Eau-liquide */
+
+.section-Eau-liquide-container{
+	display: flex;
+	justify-content: left;
+	align-items: start;
+	gap: 2rem;
+}
+
+.section-Eau-liquide-content{
+	width:200px;
+}
+
+img[alt="graph-evapo"]{
+	width:30%;
+}
+
+.bulles{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+img[alt="bulle-1"]{
+	width:80px;
+	position: absolute;
+}
+
+
+.absolute1{
+	position: absolute;
+	bottom:15%;
+	left:45%;
+
+}
+
+img[alt="bulle-2"]{
+	width:50px;
+	position: absolute;
+
+}
+
+.absolute2{
+	position: absolute;
+	bottom:10%;
+	left:65%;
+
+}
+
+
+img[alt="bulle-3"]{
+	width:90px;
+	position: absolute;
+
+}
+
+.absolute3{
+	position: absolute;
+	bottom:20%;
+	left:75%;
+
+}
+
+
+img[alt="bulle-4"]{
+	width:250px;
+	position: absolute;
+
+}
+
+.absolute4{
+	position: absolute;
+	bottom:35%;
+	left:55%;
+
+}
+
+img[alt="bulle-5"]{
+	width:350px;
+	position: absolute;
+
+}
+
+.absolute5{
+	position: absolute;
+	bottom:65%;
+	left:75%;
+
+}
+
+.text-wrap{
+	width:80px;
+}
+
+img[alt="bulles-medium1"]{
+	position: absolute;
+	bottom:5%;
+	left:40%;
+	width:25px;
+
+}
+img[alt="bulles-medium2"]{
+	position: absolute;
+	bottom:80%;
+	left:65%;
+	width:25px;
+
+}
+
+img[alt="small-bulles1"]{
+	position: absolute;
+	bottom:50%;
+	left:68%;
+	width:20px;
+
+}
+
+img[alt="small-bulles2"]{
+	position: absolute;
+	bottom:45%;
+	left:80%;
+	width:20px;
+
+}
+
+img[alt="micro-bulles1"]{
+	position: absolute;
+	bottom:50%;
+	right:10%;
+	width:10px;
+
+}
+
+
+img[alt="micro-bulles2"]{
+	position: absolute;
+	bottom:3%;
+	left:35%;
+	width:10px;
+
+}
+/* FIN section-Eau-liquide */
+
+/* section-quantite-eau */
+.section-quantite-eau-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.section-quantite-eau-container figure{
+	width:30%
+}
+
+img[alt="quantite-eau"]{
+	width: 100%;
+	margin:auto;
+}
+
+/* FIN section-quantite-eau */
+
+/* section-insuffisance-eau */
+
+.section-insuffisance-eau{
+	position: relative;
+	/* width: 100%; */
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+	padding-left: 50px;
+	padding-right: 50px; 
+	padding-top: 1rem;
+
+
+}
+
+ .section-insuffisance-eau-title{
+	position: absolute;
+	top:50px;
+	left:50px;
+}
+
+.text-card{
+	width:250px;
+}
+
+
+.section-insuffisance-eau-content{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+.section-insuffisance-eau h2{
+	color:#3FD3C7;
+	font-size: 15em;
+	left:200px
+ }
+
+
+ .card-content{
+	text-align: center;
+ }
+
+ .date{
+	position: absolute;
+	bottom: 0;
+	color:#006494;
+}
+
+img[alt="personnes"]{
+	width:150px;
+}
+
+.light-blue{
+	color: #3fd3c7;
+}
+
+
+
+/* FIN section-insuffisance-eau */

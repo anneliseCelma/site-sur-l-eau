@@ -1,0 +1,255 @@
+@font-face {
+    font-family:'Author-Bold';
+    font-weight:200px;
+    src: url('/fonts/Author-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family:'Author-Regular';
+    font-weight:200px;
+    src: url('/fonts/Author-Regular.ttf') format('truetype');
+}
+
+
+
+body{
+	background-image: linear-gradient(180deg, rgba(109,204,232,1) 0%, rgba(19,41,61,1) 0%, rgba(0,100,148,1) 100%), url('/img/BACKGROUNDSOMBREOUESH.svg');
+	background-size: cover;
+	background-position: center;
+	margin:0;
+	font-family:'Author-Bold';
+	color: #FDFFEB;
+} 
+
+h1{
+    font-family:'Author-Bold';
+	font-size: 4em;
+	color: #3fd3c7;
+}
+
+h2{
+	font-size: 3em;
+}
+
+h3{
+	font-size: 2em;
+}
+
+h4{
+	font-size: 1.5em;
+}
+p{
+    font-family:'Author-Regular';
+	color: #FDFFEB;
+	font-size:1.3em;
+
+}
+.glass{
+	border: 1px solid #ccc;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	background: rgba(255,255,255,0.2);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	border: 1px solid rgba(255,255,255,0.1);
+	color: #333;
+	border-radius: 10px;
+}
+.source{
+	font-style: italic;
+	font-size: 0.8rem !important;
+	color: #fdffeb !important;
+	font-family:'Author-Regular' !important;
+}
+.source a:hover{
+	color:#3FD3C7 !important;
+}
+.source a{
+	color:#EFB9CB;
+}
+.name{
+	font-size: 1rem !important;
+	color: #fdffeb;
+	font-family:'Author-Regular' !important;
+}
+.bulles span, .span span, .card span, .section-Usages-domestiques span ,.eau-soluce span, .section-menaces span{
+	color: #3fd3c7;
+	font-family:'Author-Bold';
+}
+
+.section-Usage-eau,.section-Cultures,.section-Usages-domestiques,.section-Eau-sur-terre,.section-Eau-liquide,.section-quantite-eau{
+	position: relative;
+	/* width: 100%; */
+	height:100vh;
+	/* overflow: hidden; */
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 1rem;
+}
+
+.section-Bulles, .section-Title-usage, .section-BigTitle, .section-Cycle-eau, .section-Title-ressources,.section-Eau-douce{
+	position: relative;
+	/* width: 100%; */
+	height:100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:3rem;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 1rem;
+
+}
+
+
+
+/*  section BUBULLES */
+
+.section-Bulles img{
+	position: absolute;
+	bottom: 50px;
+	pointer-events: none;
+	animation: animate-floating 4s linear infinite;
+}
+
+@keyframes animate-floating{
+	0%{
+		transform:translateY(0%);
+		opacity: 1;
+}
+
+100%{
+	transform:translateY(-1200%);
+	opacity: 0;
+	-webkit-transform:translateY(-1200%);
+	-moz-transform:translateY(-1200%);
+	-ms-transform:translateY(-1200%);
+	-o-transform:translateY(-1200%);
+}
+
+}
+
+/* FIN BUBULLES */
+
+/* TITRE GOUTTE */
+
+
+.goutte img {
+	width:200px;
+	animation: slide-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.section-BigTitle h1 {
+	position: absolute;
+	height: 1em;
+	z-index: 2;
+	margin: auto;
+	text-align: center;
+	opacity: 0;
+	animation: appear 2s 2.5s forwards;
+}
+
+.section-BigTitle h2 {
+	position: absolute;
+	height: 1em;
+	z-index: 2;
+	margin: auto;
+	text-align: center;
+	margin-top: 100px;
+	opacity: 0;
+	animation: appear 2s 2.5s forwards;
+	-webkit-animation: appear 2s 2.5s forwards;
+}
+
+
+.goutte-container:before,
+.goutte-container:after{
+	position: absolute;
+	content: '';
+	z-index: -1;
+	border:solid #fdffeb 5px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/* les deux elements se placent à 67% du top de leur parent */
+	top:67%;
+	margin-left: 25px;
+	transform: rotateX(75deg);
+	opacity:0;
+	animation: vibrations 2s ease-out 1s;
+
+
+}
+
+.goutte-container:after {
+	animation: vibrations 2s ease-out 1.7s;
+	-webkit-animation: vibrations 2s ease-out 1.7s;
+}
+
+
+
+@keyframes appear {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+   /* vibrations */
+   @keyframes vibrations {
+	0% {
+	  width: 150px;
+	  height: 150px;
+	  top:67%;
+
+	}
+	25% {
+	  opacity: 1;
+
+	}
+	100% {
+	  width: 300px;
+	  height: 300px;
+	  opacity: 0;
+	  top:58%;
+	  margin-left: -45px;
+
+
+
+	}
+} 
+	
+
+@-webkit-keyframes slide-bottom {
+	0% {
+	  -webkit-transform: translateY(0);
+			  transform: translateY(0);
+	}
+	100% {
+		transform: translateY(30px);
+		-webkit-transform: translateY(30px);
+		-moz-transform: translateY(30px);
+		-ms-transform: translateY(30px);
+		-o-transform: translateY(30px);
+}
+}
+
+/* FIN TITRE GOUTTE */
+
+/* section-Motion */
+
+.section-Motion p{
+	text-align: center;
+	margin: auto;
+}
+
+/* FIN section-Motion */
+
+
+
+
+
+
+
